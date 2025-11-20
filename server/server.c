@@ -16,6 +16,9 @@ int main() {
     char buffer[BUFFER_SIZE];
     char filename[100];
     FILE *fp;
+    printf("========================================\n");
+    printf("        TCP FILE TRANSFER - SERVER      \n");
+    printf("========================================\n");
 
     WSAStartup(MAKEWORD(2,2), &wsa);
 
@@ -33,11 +36,10 @@ int main() {
     new_socket = accept(server_fd, (struct sockaddr*)&address, &addrlen);
     printf("Client connected!\n");
 
-    // Receive fixed-size filename (100 bytes)
     recv(new_socket, filename, 100, 0);
     printf("Receiving file: %s\n", filename);
 
-    // Receive file size (8 bytes)
+    
     long long fileSize = 0;
     recv(new_socket, (char*)&fileSize, sizeof(fileSize), 0);
     printf("Expected size: %lld bytes\n", fileSize);
@@ -54,11 +56,16 @@ int main() {
     }
 
     printf("File received successfully! (%lld bytes)\n", total);
+    printf("Saved as : %s\n\n", filename);
 
     fclose(fp);
     closesocket(new_socket);
     closesocket(server_fd);
     WSACleanup();
+
+    printf("----------------------------------------\n");
+    printf("        End of Server Process           \n");
+    printf("----------------------------------------\n");
 
     return 0;
 }

@@ -1,2 +1,2 @@
 This is the manual for the TCP file transfer.
-Today is my day!!!!rkfv
+Today is my day!!!

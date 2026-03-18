@@ -1,2 +1,2 @@
-fThis is the manual for the TCP file transfer.
+rfThis is the manual for the TCP file transfer.
 Today is my day!!!fc

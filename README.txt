@@ -1,2 +1,2 @@
-sghThis is the manual for the TCP file transfer.
+ghThis is the manual for the TCP file transfer.
 Today is my day!!!fc

@@ -1,2 +1,2 @@
-hasuThis is the manual for the TCP file transfer.
+suThis is the manual for the TCP file transfer.
 Today is my day!!!fc

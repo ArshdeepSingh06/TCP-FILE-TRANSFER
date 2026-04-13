@@ -1,2 +1,2 @@
-dcfffaThis is the manual for the TCP file transfer.
+ffaThis is the manual for the TCP file transfer.
 Today is my day!!!fc
